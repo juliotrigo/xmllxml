@@ -11,14 +11,10 @@ XML_FOLDER = 'XML'
 XSLT_FOLDER = 'XSLT'
 OUTPUT_FOLDER = 'OUTPUT'
 
-XML_FILE = "data.xml"
-XSLT_FILE = "template.xslt"
-OUTPUT_FILE = "output.xml"
+XML_FILE = "material_small.xml"
+XSLT_FILE = "fabory.xslt"
+OUTPUT_FILE = "fabory_output.xml"
 
 XML_PATH = os.path.abspath(os.path.join(os.path.join(os.path.join(os.path.join(os.path.dirname(__file__).replace('\\', '/'), '..'), FILES_FOLDER), XML_FOLDER), XML_FILE))
 XSLT_PATH = os.path.abspath(os.path.join(os.path.join(os.path.join(os.path.join(os.path.dirname(__file__).replace('\\', '/'), '..'), FILES_FOLDER), XSLT_FOLDER), XSLT_FILE))
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.join(os.path.join(os.path.join(os.path.dirname(__file__).replace('\\', '/'), '..'), FILES_FOLDER), OUTPUT_FOLDER), OUTPUT_FILE))
-
-print(XML_PATH)
-print(XSLT_PATH)
-print(OUTPUT_PATH)
