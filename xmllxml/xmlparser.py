@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Python lxml package examples.
-
-This submodule must is in Python 2.7 temporary.
-"""
+"""XML parser module."""
 
 from __future__ import unicode_literals, print_function, absolute_import, division
 
@@ -12,7 +9,7 @@ from lxml import etree
 
 class XMLParser(object):
 
-    """XML parser."""
+    """XML parser class."""
 
     def __init__(self, xml_doc, from_file=True):
         """Initialization of the instance."""

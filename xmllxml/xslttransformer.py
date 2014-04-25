@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""XSLT transformation."""
+"""XSLT transformation module."""
 
 from __future__ import unicode_literals, print_function, absolute_import, division
 import codecs
@@ -12,7 +12,7 @@ from .xmlparser import XMLParser
 
 class XSLTransformer(object):
 
-    """XSLT transformation."""
+    """XSLT transformation class."""
 
     def __init__(self, xml_path, xslt_path, output_path):
         """Initialization of the instance.
@@ -26,7 +26,7 @@ class XSLTransformer(object):
         self.result_tree = None
 
     def transform(self):
-        """Transforms the document."""
+        """Transforms the document using the template."""
         transform = etree.XSLT(self.xslt_doc)
         self.result_tree = transform(self.xml_doc)
 
