@@ -28,3 +28,5 @@ Folder layout:
 The input and output folder layout and the output method can be changed
 in the settings.py file.
 """
+
+__version__ = '1.0.0'
