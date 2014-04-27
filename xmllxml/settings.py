@@ -6,6 +6,8 @@ from __future__ import unicode_literals, print_function, absolute_import, divisi
 
 import os
 
+OUTPUT_METHOD = 'xml'  # 'xml', 'html', 'text' or 'c14n'.
+
 FILES_FOLDER = 'FILES'
 XML_FOLDER = 'XML'
 XSLT_FOLDER = 'XSLT'

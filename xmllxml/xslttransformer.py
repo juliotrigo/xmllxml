@@ -30,10 +30,14 @@ class XSLTransformer(object):
         transform = etree.XSLT(self.xslt_doc)
         self.result_tree = transform(self.xml_doc)
 
-    def write_output(self):
-        """Writes the result tree to a file."""
-        try:
-            f = codecs.open(self.output_path, "w", "utf-8")
-            f.write(etree.tostring(self.result_tree))
-        finally:
-            f.close()
+    def write_output(self, output_method='xml'):
+        """Writes the result tree to a file.
+
+        The keyword argument 'output_method' selects the output method:
+        'xml', 'html', 'text' or 'c14n'. Default is 'xml'."""
+        with codecs.open(self.output_path, "w", "utf-8") as f:
+            f.write(etree.tostring(self.result_tree,
+                                   encoding='UTF-8',
+                                   method=output_method,
+                                   xml_declaration=True,
+                                   pretty_print=True))
