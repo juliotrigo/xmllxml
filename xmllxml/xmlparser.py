@@ -13,7 +13,7 @@ class XMLParser(object):
 
     def __init__(self, xml_doc, from_file=True):
         """Initialization of the instance."""
-        if xml_doc == '' or xml_doc == None:
+        if xml_doc == '' or xml_doc is None:
             raise Exception("XML document not valid.")
         else:
             if from_file:

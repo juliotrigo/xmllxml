@@ -35,9 +35,10 @@ class XSLTransformer(object):
 
         The keyword argument 'output_method' selects the output method:
         'xml', 'html', 'text' or 'c14n'. Default is 'xml'."""
-        with codecs.open(self.output_path, "w", "utf-8") as f:
-            f.write(etree.tostring(self.result_tree,
-                                   encoding='UTF-8',
-                                   method=output_method,
-                                   xml_declaration=True,
-                                   pretty_print=True))
+        with codecs.open(self.output_path, "w", encoding="utf-8") as f:
+            output_string = etree.tostring(self.result_tree,
+                                           encoding='UTF-8',
+                                           method=output_method,
+                                           xml_declaration=True,
+                                           pretty_print=True)
+            f.write(output_string.decode('utf-8'))
