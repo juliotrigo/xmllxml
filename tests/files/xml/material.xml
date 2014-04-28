@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<materials>
+  <material>
+    <ID>ID-001</ID>
+    <material-group-ID>00001</material-group-ID>
+    <properties>
+      <EAN>1234567890123</EAN>
+      <description-DE>ID-001 - Desc DE.</description-DE>
+      <description-EN>ID-001 - Desc EN.</description-EN>
+      <description-NL>ID-001 - Desc NL.</description-NL>
+    </properties>
+  </material>
+  <material>
+    <ID>ID-002</ID>
+    <material-group-ID>00001</material-group-ID>
+    <properties>
+      <EAN>1234567890124</EAN>
+      <description-DE>ID-002 - Desc DE.</description-DE>
+      <description-EN>ID-002 - Desc EN.</description-EN>
+      <description-NL>ID-002 - Desc NL.</description-NL>
+    </properties>
+  </material>
+  <material>
+    <ID>ID-003</ID>
+    <material-group-ID>00002</material-group-ID>
+    <properties>
+      <EAN>1234567890125</EAN>
+      <description-DE>ID-003 - Desc DE.</description-DE>
+      <description-EN>ID-003 - Desc EN.</description-EN>
+      <description-NL>ID-003 - Desc NL.</description-NL>
+    </properties>
+  </material>
+</materials>

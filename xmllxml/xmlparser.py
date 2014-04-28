@@ -30,3 +30,12 @@ class XMLParser(object):
         """Parses a XML document from a file."""
         doc = etree.parse(file_name)
         return doc
+
+    def print_document(self):
+        """Returns a Unicode string representation of the document."""
+        output_string = etree.tostring(self.xml_doc,
+                                       encoding='UTF-8',
+                                       method='xml',
+                                       xml_declaration=True,
+                                       pretty_print=True)
+        return output_string.decode('utf-8')
