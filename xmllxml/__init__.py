@@ -12,10 +12,6 @@ $ xmllxml/main.py
 
 Folder layout:
 [project folder]
-    FILES/                Input / output files folder.
-        OUTPUT/           Output files should be placed here.
-        XML/              XML files should be placed here.
-        XSLT/             XSLT templates should be placed here.
     tests/
     xmllxml/              Package folder.
         ...
@@ -27,6 +23,9 @@ Folder layout:
 
 The input and output folder layout and the output method can be changed
 in the settings.py file.
+    OUTPUT/           Output files should be placed here.
+    XML/              XML files should be placed here.
+    XSLT/             XSLT templates should be placed here.
 """
 
 __version__ = '1.0.0'
