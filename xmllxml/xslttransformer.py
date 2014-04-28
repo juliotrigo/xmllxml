@@ -7,19 +7,14 @@ import codecs
 
 from lxml import etree
 
-from .xmlparser import XMLParser
-
 
 class XSLTransformer(object):
 
     """XSLT transformation class."""
 
-    def __init__(self, xml_path, xslt_path, output_path):
+    def __init__(self, xml_parser, xslt_parser, output_path):
         """Initialization of the instance.
         """
-        xml_parser = XMLParser(xml_path, from_file=True)
-        xslt_parser = XMLParser(xslt_path, from_file=True)
-
         self.xml_doc = xml_parser.xml_doc
         self.xslt_doc = xslt_parser.xml_doc
         self.output_path = output_path
